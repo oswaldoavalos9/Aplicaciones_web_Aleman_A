@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kichi pagina</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Encabezado con barra de navegación -->
+    <div class="encabezado">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes somos</a></li>
+                <li><a href="#contacto-usuario">Contacto</a></li>
+                <li><a href="#galeria-productos">Productos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Slider de imágenes -->
+        <div class="slider">
+            <img src="assets/puzzle_encabezado.jpg" alt="Portada 1" class="slide active">
+            <img src="assets/puzzle_metal.jpg" alt="Portada 2" class="slide">
+        </div>
+    </div>
+
+    <!-- Sección principal -->
+    <section>
+        <h1>Página Principal</h1>
+        <p id="parrafos">contamos con una variedada de puzzles para desetresarte o estresarte mas pero muy divertidos :)</p>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="galeria-productos">
+        <h1>Productos</h1>
+        <p>Esta sección contiene información sobre los productos.</p>
+        <div class="galeria">
+            <div class="productos">
+                <img id="cubo 3X3" src="assets/cubo de rubik 3x3.jpg" alt="silla" width="500">
+                <h3>cubo 3X3</h3>
+                <p>$349.00</p>
+                <p></p>
+                <!-- Botón con enlace a la página de compra de producto con el ID del producto -->
+                <a href="comp.html?id_producto=1"><input type="button" value="Comprar"></a>
+            </div>
+
+            <div class="productos">
+                <img id="piranmix" src="assets/pyramix.jpg" alt="guarda ropas" width="500">
+                <h3>piranmix</h3>
+                <p>$299.00</p>
+                <p></p>
+                <a href="comp.html?id_producto=2"><input type="button" value="Comprar"></a>
+            </div>
+
+            <div class="productos">
+                <img id="puzzle metal" src="assets/puzzle_metal 2.jpg" alt="sillón" width="500">
+                <h3>puzzle metal</h3>
+                <p>$150.00</p>
+                <p></p>
+                <a href="comp.html?id_producto=3"><input type="button" value="Comprar"></a>
+            </div>
+
+            <div class="productos">
+                <img id="puzzle de madera" src="assets/puzzle_madera.jpg" alt="sillón" width="500">
+                <h3>puzzle de madera</h3>
+                <p>$200.00</p>
+                <p>Gris</p>
+                <a href="comp.html?id_producto=4"><input type="button" value="Comprar"></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección "Quienes somos" -->
+    <section id="quienes-somos">
+        <h2>¿Quiénes somos?</h2>
+        <ul>
+            <li>cubos de rubik</li>
+            <li>puzzles de madera</li>
+            <li>puzzles de metal</li>
+        </ul>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto-usuario">
+        <h2>Contacto</h2>
+        <form action="#" method="post" id="formulario">
+            <div id="form">
+                <label for="name">Ingresa tu nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Ingresa tu correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Ingresa un mensaje:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <br>
+                <input id="boton1" type="submit" value="Enviar Formulario">
+            </div>
+        </form>
+    </section>
+
+    <!-- JavaScript para el slider -->
+    <script src="slider.js"></script>
+
+</body>
+</html>
