@@ -11,19 +11,19 @@ const productos = {
         precio: "$349.00"
     },
     2: {
-        nombre: "GUARDA ROPAS",
+        nombre: "Piranmix",
         imagen: "assets/pyramix.jpg",
         descripcion: "cubo de rubik piranmix",
         precio: "$299.00"
     },
     3: {
-        nombre: "SILLÓN",
+        nombre: "puzzle metal",
         imagen: "assets/puzzle_metal 2.jpg",
         descripcion: "puzzle de metal",
         precio: "$150.00"
     },
     4: {
-        nombre: "SILLÓN",
+        nombre: "puzzle madera",
         imagen: "assets/puzzle_madera.jpg",
         descripcion: "puzzle de madera",
         precio: "$200.00"
